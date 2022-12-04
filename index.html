@@ -4,24 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>number sorter</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="arr">
   <div class="arr">
     <div id="box" class="textclass">
-      <input id="in" type="text" placeholder="enter the array" class="textclass"></input>
       <p>Array</p>
+      <input id="in" type="text" placeholder="enter the array" class="textclass"></input>
     </div>
-    <div id="box" class="textclass">
-      <input type="text" class="textclass" placeholder="enter criteria" id="criteria"></input>
-      <p>Filter criteria</p>
-    </div>
-  </div>
-  <button onclick="lessthan()" class="textclass">Less than</button>
+    <button onclick="lessthan()" class="textclass">Less than</button>
   
   <button onclick="morethan()" class="textclass">More than</button>
+    <div id="box" class="textclass">
+      <p id="write">Filter number</p>
+      <input type="text" class="textclass" placeholder="enter number" id="criteria"></input>
+    </div>
+  </div>
+  
   
   <div id="displaybrd" class="textclass"></div>
 

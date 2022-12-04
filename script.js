@@ -1,6 +1,7 @@
 let val = document.getElementById('in')
 let disp = document.getElementById('displaybrd')
 let cr = document.getElementById('criteria')
+let comp = document.getElementById('write')
 let a
 let c
 let arr = []
@@ -13,6 +14,7 @@ const lessthan = () => {
     return parseInt(str);
   });
   c = + cr.value
+  comp.innerHTML= "less than"
   let b = num.filter((m) => { return m < c })
   disp.innerHTML = b
 }
@@ -25,6 +27,7 @@ const morethan = () => {
     return parseInt(str);
   });
   c = + cr.value
+  comp.innerHTML= "more than"
   let b = num.filter((m) => { return m > c })
   disp.innerHTML = b
 }
