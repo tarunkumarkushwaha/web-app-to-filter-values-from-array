@@ -3,10 +3,6 @@ html, body {
   width: 100%;
   background:#b9b9f8;
 }
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  } */
 #box{
   height: 100px;
   width: 200px;
@@ -28,6 +24,20 @@ input {
   height: 100px;
   width: 300px;
   background-color: #c3c3f4;
+}
+   @media only screen and (max-width: 600px) {
+    .arr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4965d6;
+  }
+  #box{
+    height: 100px;
+    width: 200px;
+    background-color: #a8a8e0;
+    margin: 10px;
+  }
 }
 button{
   height:50px;
