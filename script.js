@@ -6,28 +6,28 @@ let a
 let c
 let arr = []
 const lessthan = () => {
-  a = val.value
-  for (x in a) {
-    arr.push(a[x])
-  }
-  let num = arr.map((str) => {
-    return parseInt(str);
-  });
-  c = + cr.value
-  comp.innerHTML= "less than"
-  let b = num.filter((m) => { return m < c })
-  disp.innerHTML = b
+    a = val.value
+    arr.push(a)
+
+    let num = arr[0].split(',').map(element => {
+        return parseInt(Number(element));
+      });
+
+    c = + cr.value
+    comp.innerHTML = "less than"
+    let b = num.filter((m) => { return m < c })
+    disp.innerHTML = b
 }
 const morethan = () => {
-  a = val.value
-  for (x in a) {
-    arr.push(a[x])
-  }
-  let num = arr.map((str) => {
-    return parseInt(str);
-  });
-  c = + cr.value
-  comp.innerHTML= "more than"
-  let b = num.filter((m) => { return m > c })
-  disp.innerHTML = b
+    a = val.value
+    arr.push(a)
+
+    let num = arr[0].split(',').map(element => {
+        return parseInt(Number(element));
+      });
+
+    c = + cr.value
+    comp.innerHTML = "more than"
+    let b = num.filter((m) => { return m > c })
+    disp.innerHTML = b
 }
